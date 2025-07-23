@@ -1,12 +1,21 @@
-# React + Vite
+bike_project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+header
 
-Currently, two official plugins are available:
+홈 / 커뮤니티 / 지역별 명소 / 실시간 위치 / 앱다운로드 경로 /                         로그인 / 회원가입 / 고객센터
+홈 - 메인 홈페이지
+커뮤니티 - 자랑사진, 개인 , 크루, 바이크 종류, 
+지역별 명소 - 전국 8도 / 
+실시간 위치 - 실시간 위치 서비스 
+앱 다운로드 경로 - 앱 다운로드 경로 
+                                                                              옆에 fixd로 유튜브 인스타 등등 공식계정바 설정
+body 
+소개글
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+body
+
+
+회사소개 
