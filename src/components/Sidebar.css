@@ -1,0 +1,28 @@
+.Sidebar {
+  background: rgba(31, 30, 30, 0.733);
+  border-radius: 10px;
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 5px;
+  position: fixed;
+  right: 10px;
+  bottom: 200px;
+}
+.bi {
+  font-size: 16px;
+}
+.bi-youtube {
+  color: rgb(36, 197, 36);
+   font-size: 28px;
+}
+.bi-chat-dots-fill {
+  color: rgb(255, 255, 0);
+   font-size: 28px;
+}
+.bi-headset {
+  color: red;
+   font-size: 28px;
+}
+p {
+  margin: 0;
+}

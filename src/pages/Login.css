@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bike-logo {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.login-wrap {
+  border: 1px solid rgb(201, 182, 182);
+  width: 460px;
+  height: 350px;
+  margin: 0 auto;
+}
+.login-password {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.login-id {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.login-button {
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.login-all {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
+  margin: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+}
