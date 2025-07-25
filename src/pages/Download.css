@@ -1,0 +1,14 @@
+.download-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.download-icon {
+  font-size: 200px;
+  position: absolute;
+  right: 40px;
+}
+h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}

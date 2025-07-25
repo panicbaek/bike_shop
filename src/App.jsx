@@ -6,6 +6,7 @@ import { Suspense, useEffect } from 'react'
 import Login from './pages/Login'
 import MainPage from './pages/MainPage'
 import Community from './pages/Community'
+import Download from './pages/Download'
 
 function App() {
   // page배열방
@@ -25,7 +26,7 @@ function App() {
         {/* Sidebar */}
         <Sidebar/>
         {/* MainPage */}
-        {pageList.pathname !== '/community' && <MainPage/> }
+        {pageList.pathname !== '/community' && <MainPage/>}
       </>
     }
     
@@ -38,7 +39,7 @@ function App() {
       <Route path='/sponsorship' element={0}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/companyintroduction' element={0}/>
-      <Route path='/download' element={0}/>
+      <Route path='/download' element={<Download/>}/>
       
       
       {/* 404 */}
