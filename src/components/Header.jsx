@@ -19,6 +19,7 @@ function Header() {
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
             <Nav.Link onClick={()=> navigate('/mainPage')}><div className="logo-bike">🏍️</div></Nav.Link>
+            {/* community Click */}
             <div>
               <Nav.Link onClick={() => navigate('/community')}><p className='Header-list'>community</p></Nav.Link>
             </div>

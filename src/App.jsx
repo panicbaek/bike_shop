@@ -1,28 +1,39 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import { Suspense, useEffect } from 'react'
 import Login from './pages/Login'
 import MainPage from './pages/MainPage'
-
+import Community from './pages/Community'
 
 function App() {
-
+  // page배열방
+  const pageList = useLocation();
+  
+  
+  console.log(pageList.pathname)
   return (
     <>
+    {
+      pageList.pathname === '/login' ?
+      ''
+      :
+      <>
+        {/* Navbar/header */}
+        <Header/>
+        {/* Sidebar */}
+        <Sidebar/>
+        {/* MainPage */}
+        {pageList.pathname !== '/community' && <MainPage/> }
+      </>
+    }
     
-    {/* Navbar/header */}
-    <Header/>
-    {/* Sidebar */}
-    <Sidebar/>
-    {/* MainPage */}
-    <MainPage/>
     <Suspense fallback={<div><h1>Loading</h1></div>}> 
     {/* Route */}
     <Routes>
       <Route path='/' element={0}/>
-      <Route path='/community' element={0}/>
+      <Route path='/community' element={<Community/>}/>
       <Route path='/information' element={0}/>
       <Route path='/sponsorship' element={0}/>
       <Route path='/login' element={<Login/>}/>

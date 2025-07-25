@@ -17,7 +17,7 @@ function Login () {
 
 
     {/* login-page-css */}
-    <div className='bike-logo'>🏍️</div>
+    <Nav.Link onClick={()=> navigate('/mainpage')}><div className='bike-logo'>🏍️</div></Nav.Link>
     <div className='contnet'>
       <div className='login-wrap'>
       <Form.Group as={Row} className="login-id" controlId="formPlaintextPassword">
