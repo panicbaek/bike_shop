@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import MainPage from './pages/MainPage'
 import Community from './pages/Community'
 import Download from './pages/Download'
+import Information from './pages/Information'
 
 function App() {
   // page배열방
@@ -33,7 +34,7 @@ function App() {
     <Routes>
       <Route path='/' element={<MainPage/>}/>
       <Route path='/community' element={<Community/>}/>
-      <Route path='/information' element={0}/>
+      <Route path='/information' element={<Information/>}/>
       <Route path='/sponsorship' element={0}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/companyintroduction' element={0}/>

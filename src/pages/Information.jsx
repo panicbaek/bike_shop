@@ -8,14 +8,17 @@ function Information () {
   useEffect(()=> {
     const API_KEY = '57388f5537da4cf7daca539f7fe4a995'
     const CITY = 'Seoul';
-    const URL = 'https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}'
-
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric`;
     axios(URL)
     .then(response => {
-      console.log(response.data)
+      console.log('APIdata:',response.data)
       setData(response.data)
     })
-  })
+    .catch(error => {
+      console.error('날씨정보 에러:', error);
+    })
+  }, []);
+
   return (
     <>
     </>
