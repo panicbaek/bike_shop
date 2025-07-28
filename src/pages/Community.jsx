@@ -12,21 +12,29 @@ function Community () {
     num : 1,
     title : 'title',
     nickName : 'Banana',
+    date : date,
+    like : 0,
   },
   {
     num : 2,
     title : 'title',
     nickName : 'Sun',
+    date : date,
+    like : 0,
   },
   {
     num : 3,
     title : 'title',
     nickName : 'Cat',
+    date : date,
+    like : 0,
   },
   {
     num : 4,
     title : 'title',
     nickName : 'Dog',
+    date : date,
+    like : 0,
   }]
   console.log(date)
 
@@ -51,6 +59,7 @@ function Community () {
             <td>{data.nickName}</td>
             <td>{data.title}</td>
             <td>{data.date}</td>
+            {/* like section */}
             <td>
               <i
                 className="bi bi-hand-thumbs-up-fill"

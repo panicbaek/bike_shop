@@ -11,29 +11,27 @@ import Download from './pages/Download'
 function App() {
   // page배열방
   const pageList = useLocation();
-  
+  const arr = ['/login']
+  const arr2 = ['/download', '/community', '/information', '/sponsorship']
   
   console.log(pageList.pathname)
   return (
     <>
     {
-      pageList.pathname === '/login' ?
+      arr.includes(pageList.pathname) ?
       ''
       :
       <>
-        {/* Navbar/header */}
         <Header/>
-        {/* Sidebar */}
         <Sidebar/>
-        {/* MainPage */}
-        {pageList.pathname !== '/community' && <MainPage/>}
+        {!arr2.includes(pageList.pathname) && <MainPage/>}
       </>
     }
-    
+
     <Suspense fallback={<div><h1>Loading</h1></div>}> 
     {/* Route */}
     <Routes>
-      <Route path='/' element={0}/>
+      <Route path='/' element={<MainPage/>}/>
       <Route path='/community' element={<Community/>}/>
       <Route path='/information' element={0}/>
       <Route path='/sponsorship' element={0}/>

@@ -3,8 +3,82 @@
   padding: 0;
   box-sizing: border-box;
 }
-.bike-img {
-height: 100%;
-width: 100%;
+.img-container1 {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.img-container2 {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.bike-img1 {
+  height: auto;
+  width: 100%;
+}
+.bike-img2 {
+  height: auto;
+  width: 100%;
+}
+.just-do-it1 { 
+  position: absolute;
+  color: white;
+  height: auto;
+  width: 100%;
+  top: 15%;
+  left: 15%;
+  transform: translateX(-400px);
+}
+.just-do-it2 > h1 { 
+  position: absolute;
+  height: auto;
+  width: 100%;
+  color: black;
+  top: 20%;
+  left: 20%;
+  transform: translateY(500px);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+.just-do-it2 > .no-limits.show2,
+.just-do-it2 > .just.show2,
+.just-do-it2 > .you.show2 {
+  transform: translateY(0);
+  opacity: 1;
 }
 
+/* tranform */
+.just-do-it1 > .just.show {
+  transform: translateX(400px);
+  transition: all 1.8s ease;
+}
+.just-do-it1 > .do.show {
+  transform: translateX(400px);
+  transition: all 2.0s ease;
+}
+.just-do-it1 > .it.show {
+  transform: translateX(400px);
+  transition: all 4.0s ease;
+}
+/* second */
+.just-do-it2 > .no-limits.show2 {
+  transform: translateY(0);
+  transition: all 1.8s ease;
+  opacity: 1;
+}
+.just-do-it2 > .just.show2 {
+  transform: translateY(70px);
+  transition: 2.0s ease;
+  opacity: 1;
+}
+.just-do-it2 > .you.show2 {
+  transform: translateY(140px);
+  transition: all 2.5s ease;
+  opacity: 1;
+}
+.footer-inner {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}

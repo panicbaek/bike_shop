@@ -6,9 +6,23 @@
 .download-icon {
   font-size: 200px;
   position: absolute;
-  right: 40px;
+  right: 80px;
+  margin-top: -30px;
 }
 h1 {
   font-size: 60px;
   margin-top: 20px;
+}
+.download-button {
+background-color: white;
+border-radius: 5px;
+}
+.download2 {
+  margin-top: 50px;
+}
+.download-left {
+  margin-left: 40px;
+}
+.p1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
