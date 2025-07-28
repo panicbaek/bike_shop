@@ -17,7 +17,6 @@ function MainPage() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      // 원하는 위치(px)에 도달했을 때 show2 활성화
       if (scrollY > 300) {
         setShow2(true);
       }
@@ -26,7 +25,6 @@ function MainPage() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
 
   return (
     <div className='mainpage-page'>
@@ -54,10 +52,10 @@ function MainPage() {
             <h1 className={`no-limits ${show2 ? 'show2' : ''}`}>NO LIMITS</h1>
             <h1 className={`just ${show2 ? 'show2' : ''}`}>JUST</h1>
             <h1 className={`you ${show2 ? 'show2' : ''}`}>YOU!</h1>
+            <h1 className={`give-up ${show2 ? 'show2' : ''}`}>NEVER GIVE UP!</h1>
           </div>
         </div>
       </div>
-      <div className='footer-inner'>footer section</div>
       <div className='aside_area'>
         
       </div>
