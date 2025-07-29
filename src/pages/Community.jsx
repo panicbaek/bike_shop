@@ -1,13 +1,12 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import './Community.css';
 
 function Community () {
   const [userData, setUserDate] = useState(0);
   const [like, setLike] = useState(0);
-  const [views, setViews] = useState(0);
+  
   // date
   const date = new Date().toLocaleDateString();
-
   // userData
   const allData = [{
     num : 1,
@@ -33,25 +32,10 @@ function Community () {
   {
     num : 4,
     title : 'title',
-    nickName : 'Babo',
+    nickName : 'Dog',
     date : date,
     like : 0,
-  },
-  {
-    num : 5,
-    title : 'title',
-    nickName : 'Doran',
-    date : date,
-    like : 0,
-  },
-  {
-    num : 6,
-    title : 'title',
-    nickName : 'Apple',
-    date : date,
-    like : 0,
-  }
-]
+  }]
   console.log(date)
 
   return (
@@ -79,13 +63,15 @@ function Community () {
             <td>
               <i
                 className="bi bi-hand-thumbs-up-fill"
-                onClick={()=> {
-                  setLike(like + 1)
+                onClick={() => {
+                  let _like = like
+                  _like = _like + 1;
+                  setLike(_like)
                 }}
               ></i>
               {like}
             </td>
-            <td><i className="bi bi-eye-fill"></i> 0</td>
+            <td><i className="bi bi-eye-fill"></i>0</td>
           </tr>
         ))}
       </tbody>
@@ -94,12 +80,6 @@ function Community () {
      <div className='writing'>
       <button className='previous-button'><i className="bi bi-caret-left-fill"></i></button>
       <button className='next-button'><i className="bi bi-caret-right-fill"></i></button>
-     </div>
-     <div className='button-box'>
-      <form action="">
-        <input type="text" />
-        <button type='submit' className='title-button'>submit</button>
-      </form>
      </div>
      </div>
     </>
