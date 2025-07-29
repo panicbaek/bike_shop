@@ -56,6 +56,7 @@ function MainPage() {
           </div>
         </div>
       </div>
+      
       <div className='aside_area'>
         
       </div>
