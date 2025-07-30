@@ -8,12 +8,13 @@ import MainPage from './pages/MainPage'
 import Community from './pages/Community'
 import Download from './pages/Download'
 import Information from './pages/Information'
+import Sponsorship from './pages/Sponsorship'
 
 function App() {
   // page배열방
   const pageList = useLocation();
   const arr = ['/login']
-  const arr2 = ['/download', '/community', '/information', '/sponsorship']
+  const arr2 = ['/download', '/community', '/information', '/sponsorship', ]
   
   console.log(pageList.pathname)
   return (
@@ -35,7 +36,7 @@ function App() {
       <Route path='/' element={<MainPage/>}/>
       <Route path='/community' element={<Community/>}/>
       <Route path='/information' element={<Information/>}/>
-      <Route path='/sponsorship' element={0}/>
+      <Route path='/sponsorship' element={<Sponsorship/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/companyintroduction' element={0}/>
       <Route path='/download' element={<Download/>}/>

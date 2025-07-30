@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sponsorship_main {
+  background-color: black;
+  width: 100%;
+  height: 1500px;
+}
+
+.spon_container {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.bgc_img {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  display: block;
+  position: relative;
+}
+
+.spon_img_1:hover,
+.spon_img_2:hover,
+.spon_img_3:hover,
+.spon_img_4:hover,
+.spon_img_5:hover,
+.spon_img_6:hover,
+.spon_img_7:hover {
+ transform: scale(1.2) rotate(14deg);
+}
+
+.spon_img_1 {
+ width: 15%;
+ height: 9.9%;
+ position: absolute;
+ bottom: 18%;
+ left: 45%;
+ background-color: black;
+ border-radius: 5px;
+ transform: rotate(17deg);
+ transition: transform 0.3s ease;
+}
+
+.spon_img_2 {
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  bottom: 37%;
+  left: 49%;
+  background-color: black;
+  border-radius: 5px;
+  transform: rotate(18deg);
+  transition: transform 0.3s ease;
+}
+
+.spon_img_3 {
+  width: 18%;
+  height: 10%;
+  position: absolute;
+  bottom: 27%;
+  left: 46%;
+  background: red;
+  border-radius: 5px;
+  transform: rotate(17deg);
+  transition: transform 0.3s ease;
+}
+
+.spon_img_4 {
+  width: 13%;
+  height: 8%;
+  position: absolute;
+  bottom: 47%;
+  left: 52%;
+  background-color: red;
+  border-radius: 5px;
+  transform: rotate(17deg);
+  transition: transform 0.3s ease;
+}
+
+.spon_img_5 {
+  width: 9%;
+  height: 6%;
+  position: absolute;
+  bottom: 52%;
+  left: 60%;
+  background-color: black;
+  border-radius: 5px;
+  transform: rotate(17deg);
+  transition: transform 0.3s ease;
+}
+
+.spon_img_7 {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  bottom: 58%;
+  left: 27.4%;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
+
+.spon_img_6 {
+  width: 5%;
+  height: 6%;
+  position: absolute;
+  bottom: 54.4%;
+  left: 40%;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
