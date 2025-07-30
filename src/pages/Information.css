@@ -5,6 +5,7 @@
 }
 
 .weather-container {
+  background-color: #a9e9ee;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -92,5 +93,5 @@
 
 
 .citys > div {
-  background-color: white;
+  background-color: #b4eaee;
 }
