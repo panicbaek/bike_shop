@@ -45,8 +45,8 @@ function Community () {
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">NickName</th>
           <th scope="col">Title</th>
+          <th scope="col">NickName</th>
           <th scope="col">Date</th>
           <th scope="col">Like<i className="bi bi-hand-thumbs-up-fill"></i></th>
           <th scope="col">Views <i className="bi bi-eye-fill"></i></th>
@@ -56,8 +56,8 @@ function Community () {
         {allData.map((data, index) => (
           <tr key={index}>
             <th scope="row">{data.num}</th>
-            <td>{data.nickName}</td>
             <td>{data.title}</td>
+            <td>{data.nickName}</td>
             <td>{data.date}</td>
             {/* like section */}
             <td>
