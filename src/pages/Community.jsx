@@ -2,86 +2,65 @@ import { useState } from 'react';
 import './Community.css';
 
 function Community () {
-  const [userData, setUserDate] = useState(0);
-  const [like, setLike] = useState(0);
-  
-  // date
-  const date = new Date().toLocaleDateString();
-  // userData
-  const allData = [{
+  const [data, setData] = useState([
+  {
+    num : 0,
+    title : 'szuki',
+    id : '페이커',
+    like : 1,
+    view : 0 
+  },
+  {
     num : 1,
-    title : 'title',
-    nickName : 'Banana',
-    date : date,
+    title : 'honda',
+    id : '케리아',
     like : 0,
+    view : 0 
   },
-  {
-    num : 2,
-    title : 'title',
-    nickName : 'Sun',
-    date : date,
-    like : 0,
-  },
-  {
-    num : 3,
-    title : 'title',
-    nickName : 'Cat',
-    date : date,
-    like : 0,
-  },
-  {
-    num : 4,
-    title : 'title',
-    nickName : 'Dog',
-    date : date,
-    like : 0,
-  }]
-  console.log(date)
+])
+console.log(data)
+  
+// like + 1 section
+const plusLike = (index) => {
+  updateData = [...data]
+  updateData(index).like += 1;
+  setData(updateData)
+}
+
+// view + 1 section
+const plusView = (index) => {
+  updateView = [...data]
+  updateView(index).view += 1;
+  setData(updateView)
+}
+  localStorage.setItem('postData', JSON.stringify(data));
 
   return (
     <>
-    <div className='border-box'>
-    <table className="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Title</th>
-          <th scope="col">NickName</th>
-          <th scope="col">Date</th>
-          <th scope="col">Like<i className="bi bi-hand-thumbs-up-fill"></i></th>
-          <th scope="col">Views <i className="bi bi-eye-fill"></i></th>
-        </tr>
-      </thead>
-      <tbody>
-        {allData.map((data, index) => (
-          <tr key={index}>
-            <th scope="row">{data.num}</th>
-            <td>{data.title}</td>
-            <td>{data.nickName}</td>
-            <td>{data.date}</td>
-            {/* like section */}
-            <td>
-              <i
-                className="bi bi-hand-thumbs-up-fill"
-                onClick={() => {
-                  let _like = like
-                  _like = _like + 1;
-                  setLike(_like)
-                }}
-              ></i>
-              {like}
-            </td>
-            <td><i className="bi bi-eye-fill"></i>0</td>
-          </tr>
-        ))}
-      </tbody>
-     </table>
-     {/* Writing */}
-     <div className='writing'>
-      <button className='previous-button'><i className="bi bi-caret-left-fill"></i></button>
-      <button className='next-button'><i className="bi bi-caret-right-fill"></i></button>
-     </div>
-     </div>
+    <div className='community_bgc'>
+      <div className='notice_board'>
+        <table className='post_table'>
+          <thead>
+            <tr className='tr'>
+              <th>No.</th>
+              <th>제목</th>
+              <th>아이디</th>
+              <th>좋아요</th>
+              <th>조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{data[0].num}</td>
+              <td>{data[0].title}</td>
+              <td>{data[0].id}</td>
+              <td>{data[0].like}</td>
+              <td>{data[0].view}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     </>
   )
 }

@@ -89,8 +89,8 @@
   width: 9%;
   height: 6%;
   position: absolute;
-  bottom: 52%;
-  left: 60%;
+  bottom: 53%;
+  left: 58%;
   background-color: black;
   border-radius: 5px;
   transform: rotate(17deg);
@@ -102,7 +102,7 @@
   height: 8%;
   position: absolute;
   bottom: 58%;
-  left: 27.4%;
+  left: 31%;
   transform: rotate(10deg);
   transition: transform 0.3s ease;
 }
@@ -111,8 +111,8 @@
   width: 5%;
   height: 6%;
   position: absolute;
-  bottom: 54.4%;
-  left: 40%;
+  bottom: 55%;
+  left: 41%;
   transform: rotate(10deg);
   transition: transform 0.3s ease;
 }
