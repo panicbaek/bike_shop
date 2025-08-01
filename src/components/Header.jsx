@@ -21,13 +21,13 @@ function Header() {
             <Nav.Link onClick={()=> navigate('/mainPage')}><div className="logo-bike">🏍️</div></Nav.Link>
             {/* community Click */}
             <div>
-              <Nav.Link onClick={() => navigate('/community')}><p className='Header-list'>community</p></Nav.Link>
+              <Nav.Link onClick={() => navigate('/community')}><p className='Header-list'>Community <i class="bi bi-chat-right-text-fill"></i></p></Nav.Link>
             </div>
             <div>
-              <Nav.Link onClick={() => navigate('/information')}><p className='Header-list'>information</p></Nav.Link>
+              <Nav.Link onClick={() => navigate('/information')}><p className='Header-list'>Weather <i class="bi bi-clouds-fill"></i></p></Nav.Link>
             </div>
             <div>
-              <Nav.Link onClick={() => navigate('/sponsorship')}><p className='Header-list'>sponsorship</p></Nav.Link>
+              <Nav.Link onClick={() => navigate('/sponsorship')}><p className='Header-list'>Sponsorship <i class="bi bi-box-fill"></i></p></Nav.Link>
             </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

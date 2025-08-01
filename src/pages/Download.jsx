@@ -8,6 +8,7 @@ function Download() {
   return (
     <>
     <div className='download-container'>
+    <div className='download-box'>
       <div className="download-icon"><Nav.Link onClick={()=> navigate('/mainpage')}>
         🏍️</Nav.Link>
       </div>
@@ -16,16 +17,17 @@ function Download() {
           <h1>BikeCommunity</h1>
           <button type="button" className="btn btn-success download2" onClick={()=> {
             
-          const result = confirm("Download 하시겠습니까?")
-        
-          if ( result ) {
-            console.log("확인")
-          } else {
-            console.log("취소")
-          }
+            const result = confirm("Download 하시겠습니까?")
+            
+            if ( result ) {
+              console.log("확인")
+            } else {
+              console.log("취소")
+            }
           }}><p className='p1'>다른 기기에 설치</p></button>
         </div>
       </div>
+    </div>
     </div>
     </>
   )
