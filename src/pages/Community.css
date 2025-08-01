@@ -31,7 +31,9 @@
   height: auto;
 }
 
-th {
+.td_like:hover,
+.td_view:hover {
+  cursor: pointer;
 }
 
 .post_table tr

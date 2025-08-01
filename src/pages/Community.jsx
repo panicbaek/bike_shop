@@ -61,9 +61,9 @@ function Community() {
               {data.map((item, i) => (
                 <tr key={i}>
                   <td>{item.num}</td>
-                  <td onClick={() => plusView(i)}>{item.title}</td>
+                  <td className='td_view' onClick={() => plusView(i)}>{item.title}</td>
                   <td>{item.id}</td>
-                  <td onClick={() => plusLike(i)}>
+                  <td className='td_like' onClick={() => plusLike(i)}>
                     👍
                      {item.like}
                   </td>
