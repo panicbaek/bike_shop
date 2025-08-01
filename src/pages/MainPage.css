@@ -4,17 +4,24 @@
   box-sizing: border-box;
 }
 
+.img-container-all {
+}
+
 .img-container1,
 .img-container2 {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .bike-img1,
 .bike-img2 {
   width: 100%;
-  height: auto;
+  height: 100%;
+  justify-self: center;
 }
 
 /* first */
@@ -30,7 +37,7 @@
 }
 .just-do-it1 > .just {
   opacity: 0;
-  transition: all 1.8s ease;
+  transition: all 1.2s ease;
 }
 
 .just-do-it1 > .just.show {
@@ -42,7 +49,7 @@
 /* do */
 .just-do-it1 > .do {
   opacity: 0;
-  transition: all 1.0s ease;
+  transition: all 1.2s ease;
 }
 
 .just-do-it1 > .do.show {
@@ -53,7 +60,7 @@
 /* it */
 .just-do-it1 > .it {
   opacity: 0;
-  transition: all 1.0s ease;
+  transition: all 1.2s ease;
 }
 
 .just-do-it1 > .it.show {

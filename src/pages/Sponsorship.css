@@ -12,7 +12,7 @@
 
 .spon_container {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -57,7 +57,7 @@
   left: 49%;
   background-color: black;
   border-radius: 5px;
-  transform: rotate(18deg);
+  transform: rotate(17deg);
   transition: transform 0.3s ease;
 }
 
@@ -78,7 +78,7 @@
   height: 8%;
   position: absolute;
   bottom: 47%;
-  left: 52%;
+  left: 51%;
   background-color: red;
   border-radius: 5px;
   transform: rotate(17deg);
@@ -90,7 +90,7 @@
   height: 6%;
   position: absolute;
   bottom: 53%;
-  left: 58%;
+  left: 57%;
   background-color: black;
   border-radius: 5px;
   transform: rotate(17deg);
